@@ -1,0 +1,47 @@
+#header{
+    width: 180px;
+    height: 100%;
+    background-color: #cc175b;
+    
+    position: fixed;
+}
+
+/********************标题********************/
+#header h1{
+    text-align: center;
+    margin: 0px;
+}
+
+#header h1 img{
+    margin-top: 30px;
+}
+
+/********************左下角目录********************/
+#header-menu{
+    position: fixed;
+    width: 180px;
+    height: 260px;
+    bottom: 20px;
+}
+
+#header-menu li{
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    list-style-type:none;
+}
+
+#header-menu li a{
+    font-family: '微软雅黑', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    
+    letter-spacing: 2px;
+}
+
+#header-menu hr{
+    margin-left: 10px;
+    margin-right: 10px;
+}

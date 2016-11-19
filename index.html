@@ -1,19 +1,156 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" dir="ltr">  
+<html>
 <head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-<title>Zhang Yunhao Resume</title>
-
-<script src="js/jquery-1.8.3.min.js"></script>
+    <title> 豆沙包 </title>
+    <!-- 中文乱码问题 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
-</head>  
-   
-<body>  
-    <script>
-        $(document).ready(function(){
-            location.href = "pdf/web/viewer.html?file=resume.pdf";
-        });
-    </script>
-</body>  
-</html> 
+    <!-- 样式表文件 -->
+    <link rel="stylesheet" href="baozi/static/css/header.css">
+    <link rel="stylesheet" href="baozi/static/css/contents.css">
+    <link rel="stylesheet" href="baozi/static/css/main.css">
+    
+    <!-- Js脚本 -->
+    <script type="text/javascript" src="baozi/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="baozi/static/js/content-flash.js"></script>
+    <script type="text/javascript" src="baozi/static/js/content-sliding.js"></script>
+    
+</head>
+    
+<body>
+<div id="container">
+    
+    <div id="header">
+        <h1>
+        <img src="baozi/static/image/logo.png">
+        </h1>
+        
+        <div id="header-menu">
+            <ul>
+                <li>  <a href="/about">ABOUT</a>  </li>
+                <li>  <a href="/service">SERVICE</a>  </li>
+                <li>  <a href="/works">WORKS</a>  </li>
+                <li>  <a href="/menbers">MEMBERS</a>  </li>
+                <li>  <a href="/columns">COLUMNS</a>  </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <img src="baozi/static/image/bg_nav_contact.png">
+                    <a href="/contact">CONTANCT</a>  
+                </li>
+                <li>  
+                    <img src="baozi/static/image/bg_nav_access.png">
+                    <a href="/access">ACCESS</a>  
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div id="contents">
+        <div id="content-flash">
+            <div id="content-flash-title">
+                <h1> Creativity </h1>
+            </div>
+        </div>
+        
+        <div id="content-updates">
+            <h1>NEWS UPDATE</h1>
+            <h1>
+                2016.08.18	
+                &nbsp; &nbsp;   <!-- &nbsp表示空格 -->
+                <a href="/update">
+                    コラム『ARの次はVR？「VR ZONE」へ行ってきました！』をアップしました。
+                </a>
+            </h1>
+        </div>
+        
+        <div id="works" class="content-entry">
+            <h1>WORKS</h1>
+            <div class="works-sliding">
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/1.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/2.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/3.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/4.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/5.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/6.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/7.jpg">
+                </div>
+            </div>
+            <div class="works-sliding">
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/1.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/2.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/3.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/4.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/5.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/6.jpg">
+                </div>
+                <div class="works-sliding-item">
+                    <img src="baozi/static/image/baozi/7.jpg">
+                </div>
+            </div>
+            <button>MORE</button>
+        </div>
+        
+        <div id="service" class="content-entry">
+            <h1>SERVICE</h1>
+            <h2>
+                Webサイト立ち上げの相談から、制作や公開後の改善・保守まで、お客様のニーズに合わせたサービスを提供いたします
+            </h2>
+            
+            <!-- 设置width和margin以后可以居中 -->
+            <div style="margin:auto;width:1000px;">
+                <div class="service-entry">
+                    <img src="baozi/static/image/img_top_service_01.jpg">
+                    <h2>PLANNING</h2>
+                    <p>
+                        お客様のご要件、ご要望、課題をヒアリングし、最適なソリューションを企画・提案します。競合他社の分析調査をしたり、ユーザテストを通じてお客様のWebサイトの抱える問題点を見つけ出し、改善の提案を行います。
+                    </p>
+                </div>
+                <div class="service-entry">
+                    <img src="baozi/static/image/img_top_service_02.jpg">
+                    <h2>DESIGN／CODING</h2>
+                    <p>
+                        Webサイトのデザインや、コーディング、レスポンシブ（スマートフォン）対応、CMS構築など、幅広く対応いたします。クオリティだけではなく、ユーザビリティーやユーザエクスペリエンスの向上、コンバージョンUPなど、戦略的な機能を備えたWebサイトの制作を行います。
+                    </p>
+                </div>
+                <div class="service-entry">
+                    <img src="baozi/static/image/img_top_service_03.jpg">
+                    <h2>ANALYSIS</h2>
+                    <p>
+                        Webサイトの運用計画や、更新代行・メンテナンスを行ったり、アクセスログを分析して改善策をご提案するなど、公開後もWebサイトをより良くするためのお手伝いをいたします。
+                    </p>
+                </div>
+            </div>
+            <!-- 消除上面float left的影响 -->
+            <div style="clear:both"></div>
+            <button>MORE</button>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>

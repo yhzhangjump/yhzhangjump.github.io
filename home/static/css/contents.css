@@ -1,6 +1,7 @@
 /********************右上内容********************/
 #contents{
     margin-left: 180px;
+    min-width: 1200px;
     background: url("../image/bg_top_mask.png") top left repeat;
 }
 

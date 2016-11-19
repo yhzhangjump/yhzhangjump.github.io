@@ -46,7 +46,7 @@
 #works{
     background: url("../image/bg_type1.png");
 }
-#service{
+#research{
     background-color: white;
 }
 
@@ -58,48 +58,24 @@
 }
 .content-entry h1{
     font-family: Microsoft YaHei;
-    font-size: 30px;
+    font-size: 40px;
     font-weight:  700;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 }
 .content-entry h2{
-    font-size: 14px;
+    font-size: 20px;
+    line-height: 24px;
 }
 
-.content-entry button{
-    height: 64px;
-    width: 180px;
-    background-color: #000;
-    color: #ffffff;
-    font-size: 24px;
-    font-weight: 700;
-    margin-top: 20px;
-}
-
-.works-sliding{
-    height: 225px;
-    width: 150%;
-    background-color: aqua;
-    margin-bottom: 8px;
-}
-
-.works-sliding-item{
-    float: left;
-}
-
-.works-sliding img{
-    height: 100%;
-    width: auto;
-}
-
-.service-entry{
+.research-entry{
     float:left;
     margin:auto;
     width: 300px;
-    margin-right: 30px;
+    margin-right: 100px;
 }
-.service-entry h2{
+
+.research-entry h2{
     font-family: Microsoft YaHei;
     font-weight: 700;
     font-size: 18px;

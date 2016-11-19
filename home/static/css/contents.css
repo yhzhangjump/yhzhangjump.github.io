@@ -15,7 +15,7 @@
     height: 300px;
     width: 1200px;
     margin: auto;
-    font-family: Microsoft YaHei;
+    /*font-family: Microsoft YaHei;*/
 }
 #content-bio-content h2{
     margin-top: 15px;
@@ -33,13 +33,13 @@
 }
 
 #content-updates h1, #content-updates h1 a{
-    width: 600px;          /* 固定文字高度 */
+    width: 800px;          /* 固定文字高度 */
     margin: auto;           /* H1居中 */
     color: #fff;
     font-size: 14px;
     line-height: 22px;
     font-weight: bold;
-    font-family: Microsoft YaHei;
+    /*font-family: Microsoft YaHei;*/
 }
 
 
@@ -73,7 +73,7 @@
     text-align: center;    /* Button的居中 */
 }
 .content-entry h1{
-    font-family: Microsoft YaHei;
+    /*font-family: Microsoft YaHei;*/
     font-size: 40px;
     font-weight:  700;
     text-align: center;
@@ -93,7 +93,7 @@
 }
 
 .project-entry h2{
-    font-family: Microsoft YaHei;
+    /*font-family: Microsoft YaHei;*/
     font-weight: 700;
     font-size: 22px;
     color: #222;
@@ -106,4 +106,6 @@
 .project-entry p{
     color: black;
     font-size: 18px;
+    /*font-family: Microsoft YaHei;*/
+    font-weight: normal;
 }

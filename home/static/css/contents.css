@@ -54,6 +54,17 @@
 #projects{
     background-color: white;
 }
+#potpourri{
+    background: url("../image/Research/background.png");
+}
+#copyleft{
+    color: white;
+    font-size: 16px;
+    background: black;
+    height: 40px;
+    text-align: center;
+    padding-top:20px;
+}
 
 .content-entry{
     padding-top: 100px;

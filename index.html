@@ -1,18 +1,16 @@
 <html>
 <head>
-    <title> 豆沙包 </title>
+    <title> Yunhao Zhang Home Page </title>
     <!-- 中文乱码问题 -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     
     <!-- 样式表文件 -->
-    <link rel="stylesheet" href="baozi/static/css/header.css">
-    <link rel="stylesheet" href="baozi/static/css/contents.css">
-    <link rel="stylesheet" href="baozi/static/css/main.css">
+    <link rel="stylesheet" href="home/static/css/header.css">
+    <link rel="stylesheet" href="home/static/css/contents.css">
+    <link rel="stylesheet" href="home/static/css/main.css">
     
     <!-- Js脚本 -->
-    <script type="text/javascript" src="baozi/static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="baozi/static/js/content-flash.js"></script>
-    <script type="text/javascript" src="baozi/static/js/content-sliding.js"></script>
+    <script type="text/javascript" src="home/static/js/jquery.min.js"></script>
     
 </head>
     
@@ -20,103 +18,88 @@
 <div id="container">
     
     <div id="header">
+
+        <!--
         <h1>
-        <img src="baozi/static/image/logo.png">
+        <img src="home/static/image/logo.png">
         </h1>
+        -->
         
         <div id="header-menu">
-            <ul>
-                <li>  <a href="/about">ABOUT</a>  </li>
-                <li>  <a href="/service">SERVICE</a>  </li>
-                <li>  <a href="/works">WORKS</a>  </li>
-                <li>  <a href="/menbers">MEMBERS</a>  </li>
-                <li>  <a href="/columns">COLUMNS</a>  </li>
+            <ul class="top-menu">
+                <li>  <a href="index.html#bio">Bio</a>  </li>
+                <li>  <a href="index.html#research">Research</a>  </li>
+                <li>  <a href="index.html#project">Projects</a>  </li>
+                <li>  <a href="index.html#potpourri">Potpourri</a>  </li>
+                <li>  <a href="resume/web/viewer.html?file=resume.pdf" target="_blank">Résumé</a>  </li>
+                <li>  <a href="https://github.com/yhzhang0128" target="_blank">Github</a>  </li>
+                
             </ul>
-            <hr>
-            <ul>
+            
+            <ul class="bottom-menu">
+                <hr>
                 <li>
-                    <img src="baozi/static/image/bg_nav_contact.png">
-                    <a href="/contact">CONTANCT</a>  
+                    <img src="home/static/image/bg_nav_contact.png">
+                    <a href="/contact">Contact</a>  
                 </li>
+                <!--
                 <li>  
-                    <img src="baozi/static/image/bg_nav_access.png">
+                    <img src="home/static/image/bg_nav_access.png">
                     <a href="/access">ACCESS</a>  
                 </li>
+                -->
             </ul>
         </div>
     </div>
     
     <div id="contents">
-        <div id="content-flash">
-            <div id="content-flash-title">
-                <h1> Creativity </h1>
+        <div id="content-bio">
+            <div id="content-bio-content">
+                <div style="float:left">
+                    <img src="home/static/image/About/avatar.jpeg" 
+                         style="margin-left: 25px; margin-top: 25px;
+                                height:250px;width:250px; border-radius: 10px;
+                                box-shadow: 2px 2px 3px 0px #29BED2;">
+                </div>
+                <div style="float:left; margin-left:70px;">
+                    <h2>Yunhao Zhang (张云昊)</h2>
+                    <p>
+                        <span style="font-style:italic">College Senior</span>, School of Software, SJTU
+                        <br>
+                        <span style="font-style:italic">Research Assistant</span>, Institute of Parallel and Distributed Systems (IPADS)
+                        <br>
+                        <span style="font-style:italic">Student Member</span>, User eXperience Professional Association (UXPA)
+                        <br>
+                        
+                        <br>
+                        Email: zhangyunh (at) gmail (dot) com
+                        
+                        <br><br>
+                        3402 Software Building, <br>
+                        Shanghai Jiao Tong University <br>
+                        800 Dongchuan Road, Minhang District <br>
+                        Shanghai, P.R.China <br>
+                        <br>
+                        
+                    </p>
+                </div>
+                <div style="clear:both"></div>
             </div>
         </div>
         
         <div id="content-updates">
             <h1>NEWS UPDATE</h1>
             <h1>
-                2016.08.18	
+                2016.11.04	
                 &nbsp; &nbsp;   <!-- &nbsp表示空格 -->
-                <a href="/update">
-                    コラム『ARの次はVR？「VR ZONE」へ行ってきました！』をアップしました。
+                <a href="Article1_OSDI16.html">
+                    Attending USENIX OSDI'16 with advisors and Ph.D students of IPADS
                 </a>
             </h1>
         </div>
         
-        <div id="works" class="content-entry">
-            <h1>WORKS</h1>
-            <div class="works-sliding">
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/1.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/2.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/3.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/4.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/5.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/6.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/7.jpg">
-                </div>
-            </div>
-            <div class="works-sliding">
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/1.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/2.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/3.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/4.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/5.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/6.jpg">
-                </div>
-                <div class="works-sliding-item">
-                    <img src="baozi/static/image/baozi/7.jpg">
-                </div>
-            </div>
-            <button>MORE</button>
-        </div>
-        
         <div id="service" class="content-entry">
-            <h1>SERVICE</h1>
+            <h1>RESEARCH</h1>
             <h2>
                 Webサイト立ち上げの相談から、制作や公開後の改善・保守まで、お客様のニーズに合わせたサービスを提供いたします
             </h2>
@@ -124,21 +107,21 @@
             <!-- 设置width和margin以后可以居中 -->
             <div style="margin:auto;width:1000px;">
                 <div class="service-entry">
-                    <img src="baozi/static/image/img_top_service_01.jpg">
+                    <img src="home/static/image/img_top_service_01.jpg">
                     <h2>PLANNING</h2>
                     <p>
                         お客様のご要件、ご要望、課題をヒアリングし、最適なソリューションを企画・提案します。競合他社の分析調査をしたり、ユーザテストを通じてお客様のWebサイトの抱える問題点を見つけ出し、改善の提案を行います。
                     </p>
                 </div>
                 <div class="service-entry">
-                    <img src="baozi/static/image/img_top_service_02.jpg">
+                    <img src="home/static/image/img_top_service_02.jpg">
                     <h2>DESIGN／CODING</h2>
                     <p>
                         Webサイトのデザインや、コーディング、レスポンシブ（スマートフォン）対応、CMS構築など、幅広く対応いたします。クオリティだけではなく、ユーザビリティーやユーザエクスペリエンスの向上、コンバージョンUPなど、戦略的な機能を備えたWebサイトの制作を行います。
                     </p>
                 </div>
                 <div class="service-entry">
-                    <img src="baozi/static/image/img_top_service_03.jpg">
+                    <img src="home/static/image/img_top_service_03.jpg">
                     <h2>ANALYSIS</h2>
                     <p>
                         Webサイトの運用計画や、更新代行・メンテナンスを行ったり、アクセスログを分析して改善策をご提案するなど、公開後もWebサイトをより良くするためのお手伝いをいたします。

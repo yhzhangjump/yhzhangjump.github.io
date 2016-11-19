@@ -4,27 +4,24 @@
     background: url("../image/bg_top_mask.png") top left repeat;
 }
 
-#content-flash{
-    height: 500px;
-    background: url("../image/bg_top.svg") right bottom/cover no-repeat;
+#content-bio{
+    height: 330px;
+    padding-top: 30px;
 }
 
-#content-flash-title{
-    height: 77px;
-    width: 624px;
-    margin-left: 360px;
-    margin-top: 150px;
-    position: absolute;
-    background: url("../image/bg_top_slogan_pc.png");
+#content-bio-content{
+    height: 300px;
+    width: 1200px;
+    margin: auto;
+    font-family: Microsoft YaHei;
 }
-
-#content-flash-title h1{
-    margin-left: 250px;
-    margin-top: -10px;
-    font-size: 70px;
-    font-family: 微软雅黑;
-    text-align: center;
-    text-shadow: 0 2px 0 #fff, 2px 0 0 #fff, 0 -2px 0 #fff, -2px 0 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+#content-bio-content h2{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#content-bio-content p{
+    font-size: 19px;
+    line-height: 23px;
 }
 
 #content-updates{
@@ -34,13 +31,13 @@
 }
 
 #content-updates h1, #content-updates h1 a{
-    width: 1000px;          /* 固定文字高度 */
+    width: 600px;          /* 固定文字高度 */
     margin: auto;           /* H1居中 */
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
     font-weight: bold;
-    font-family: 微软雅黑;
+    font-family: Microsoft YaHei;
 }
 
 
@@ -60,7 +57,7 @@
     text-align: center;    /* Button的居中 */
 }
 .content-entry h1{
-    font-family: 微软雅黑;
+    font-family: Microsoft YaHei;
     font-size: 30px;
     font-weight:  700;
     text-align: center;
@@ -103,7 +100,7 @@
     margin-right: 30px;
 }
 .service-entry h2{
-    font-family: 微软雅黑;
+    font-family: Microsoft YaHei;
     font-weight: 700;
     font-size: 18px;
     line-height: 0.5em;

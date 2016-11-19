@@ -21,25 +21,48 @@
     position: fixed;
     width: 180px;
     height: 260px;
+}
+
+.top-menu{
+    position: fixed;
+}
+.top-menu li a{
+    color: white;
+    display: block;
+}
+.top-menu li:hover{
+    background-color: white;
+}
+.top-menu li:hover a{
+    color: #cc175b;
+}
+
+.bottom-menu{
+    position: fixed;
     bottom: 20px;
+}
+.bottom-menu li a{
+    color: white;
 }
 
 #header-menu li{
     height: 35px;
+    width: 170px;
     line-height: 35px;
     padding-left: 10px;
     list-style-type:none;
 }
 
 #header-menu li a{
-    font-family: '微软雅黑', sans-serif;
-    font-size: 14px;
+    font-family: Microsoft YaHei, sans-serif;
+    font-size: 16px;
     font-weight: 700;
-    color: #fff;
     text-decoration: none;
     
     letter-spacing: 2px;
 }
+
+
 
 #header-menu hr{
     margin-left: 10px;

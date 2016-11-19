@@ -5,6 +5,7 @@
     background: url("../image/bg_top_mask.png") top left repeat;
 }
 
+
 #content-bio{
     height: 330px;
     padding-top: 30px;
@@ -76,7 +77,8 @@
     float:left;
     margin:auto;
     width: 300px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .project-entry h2{

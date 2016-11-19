@@ -44,9 +44,12 @@
 
 /********************右下内容********************/
 #works{
-    background: url("../image/bg_type1.png");
+    
 }
 #research{
+    background: url("../image/Research/background.png");
+}
+#projects{
     background-color: white;
 }
 
@@ -68,21 +71,26 @@
     line-height: 24px;
 }
 
-.research-entry{
+.project-entry{
     float:left;
     margin:auto;
     width: 300px;
     margin-right: 100px;
 }
 
-.research-entry h2{
+.project-entry h2{
     font-family: Microsoft YaHei;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 22px;
     line-height: 0.5em;
     color: #222;
     letter-spacing: 0.05em;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 20px;
+}
+
+.project-entry p{
+    color: black;
+    font-size: 18px;
 }

@@ -1,13 +1,13 @@
 /********************右上内容********************/
 #contents{
     margin-left: 180px;
-    min-width: 1200px;
+    /*min-width: 1200px;*/
     background: url("../image/bg_top_mask.png") top left repeat;
 }
 
 
 #content-bio{
-    height: 330px;
+    min-height: 330px;
     padding-top: 30px;
 }
 
@@ -30,10 +30,11 @@
     height: 44px;           /* 黑框高度 */
     padding: 8px 3px;       /* 上下8px，左右3px */
     background-color: #333; /* 黑框背景 */
+    text-align: center;
 }
 
 #content-updates h1, #content-updates h1 a{
-    width: 800px;          /* 固定文字高度 */
+    /*width: 800px;*/          /* 固定文字高度 */
     margin: auto;           /* H1居中 */
     color: #fff;
     font-size: 14px;
@@ -69,6 +70,7 @@
 .content-entry{
     padding-top: 100px;
     padding-bottom: 90px;
+    
     overflow:hidden;
     text-align: center;    /* Button的居中 */
 }

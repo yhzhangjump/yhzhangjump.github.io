@@ -11,7 +11,64 @@
     
     <!-- Js脚本 -->
     <script type="text/javascript" src="home/static/js/jquery.min.js"></script>
-    
+    <script>
+        var news_update = "<h1>NEWS UPDATE</h1><h1>2016.11.04 &nbsp; &nbsp; <a href=Article1_OSDI16.html>Attending USENIX OSDI'16 with advisors and Ph.D students of IPADS</a></h1>";
+        
+        var alert_info = "<h1>Bio is hidden due to limited screen width.</h1><h1> Please widen screen or use non-mobile devices <h1>";
+        
+        var responsive = function(){
+            var menu_width = 180;
+            var item_width = 300 + 5;
+            var right_width = $(window).width() - menu_width;
+            var cast_right_width = Math.min(1200, right_width);
+            
+            // project layout
+            if (right_width >= 1200){
+                $(".project-list").css("width", "1200px");
+                $(".project-entry").css("margin-right", "50px");
+                $(".project-entry").css("margin-right", "50px");
+            } else{
+                $(".project-list").css("width", right_width+"px");
+                var num_per_row = Math.floor(right_width / item_width);
+                var margin = Math.floor((right_width - num_per_row * item_width) / num_per_row / 2);
+                $(".project-entry").css("margin-left", margin+"px");
+                $(".project-entry").css("margin-right", margin+"px");
+            }
+            
+            // special layout for list less than 2 items
+            $(".project-list").each(function(){
+                var item_num = $(this).children().length;
+                if (item_num < 3){
+                    item_num = Math.min(item_num, Math.floor(right_width / item_width));
+
+                    var margin = Math.floor((cast_right_width - item_num * item_width) / item_num / 2);
+                    $(this).find("div").each(function(){
+                        $(this).css("margin-left", margin+"px");
+                        $(this).css("margin-right", margin+"px");
+                    });
+                }
+            })
+            
+            // Bio
+            if (right_width < 1200){
+                $("#content-bio-content").css("width", "300px");
+                $("#content-bio-title p").css("display", "none");
+                $("#content-bio-title").css("margin-left", "10px");
+                
+                $("#content-updates").html(alert_info);
+            } else{
+                // re-display text content
+                $("#content-bio-content").css("width", "1200px");
+                $("#content-bio-title p").css("display", "inherit");
+                $("#content-bio-title").css("margin-left", "70px");
+                
+                $("#content-updates").html(news_update);
+            }
+        }
+        
+        $(document).ready(responsive);
+        $(window).resize(responsive);
+    </script>
 </head>
     
 <body>
@@ -61,13 +118,13 @@
     <div id="contents">
         <div id="content-bio">
             <div id="content-bio-content">
-                <div style="float:left">
+                <div id="content-bio-avatar" style="float:left">
                     <img src="home/static/image/About/avatar.jpeg" 
                          style="margin-left: 25px; margin-top: 25px;
                                 height:250px;width:250px; border-radius: 10px;
                                 box-shadow: 2px 2px 3px 0px #29BED2;">
                 </div>
-                <div style="float:left; margin-left:70px; margin-top:-10px;">
+                <div id="content-bio-title" style="float:left; margin-left:70px; margin-top:-10px;">
                     <h2>Yunhao Zhang (张云昊)</h2>
                     <p>
                         <span style="font-style:italic">College Senior</span>, School of Software, SJTU
@@ -113,7 +170,7 @@
             </h2>
             
             <!-- 设置width和margin以后可以居中 -->
-            <div style="margin:auto;width:1200px;margin-top:50px;">
+            <div style="margin:auto;width:1200px;margin-top:50px;" class="project-list">
                 <a href="http://ipads.se.sjtu.edu.cn/projects/wukong" target="_blank">
                 <div class="project-entry">
                     <img src="home/static/image/Research/Wukong.png" style="width:180px;margin-top:10px; height:auto;">
@@ -152,7 +209,7 @@
             </h2>
             
             <!-- 设置width和margin以后可以居中 -->
-            <div style="margin:auto;width:1200px;margin-top:30px;">
+            <div style="margin:auto;width:1200px;margin-top:30px;" class="project-list">
                 <a href="http://www.sjtuuni.com" target="_blank">
                 <div class="project-entry">
                     <img src="home/static/image/Projects/souvenir.jpg">
@@ -191,7 +248,7 @@
                 I enjoy trying interesting technologies with toy projects.
             </h2>
             
-            <div style="margin:auto;width:1200px;margin-top:30px;">
+            <div style="margin:auto;width:1200px;margin-top:30px;" class="project-list">
                 <a href="https://github.com/yhzhang0128/TAPL" target="_blank">
                 <div class="project-entry">
                     <img src="home/static/image/Projects/lambda.png">

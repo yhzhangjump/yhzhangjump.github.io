@@ -80,16 +80,28 @@
     margin-bottom: 30px;
 }
 .content-entry h2{
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: normal;
 }
 
 .project-entry{
     float:left;
     margin:auto;
     width: 300px;
+    height: 400px;
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 2px; /* reserved for hover effect */
+}
+
+.project-entry:hover{
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 0px;
 }
 
 .project-entry h2{

@@ -1,0 +1,229 @@
+<html>
+<head>
+    <title> LY Matrix </title>
+    <!-- 中文乱码问题 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!-- 样式表文件 -->
+    <link rel="stylesheet" href="home/static/css/header.css">
+    <link rel="stylesheet" href="home/static/css/contents.css">
+    <link rel="stylesheet" href="home/static/css/main.css">
+    
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+    <!-- Js脚本 -->
+    <script type="text/javascript" src="home/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+
+</head>
+    
+<body>
+<div id="container">
+    
+    
+    <div id="contents" style="margin-left:0px;">
+        <div id="content-bio" style="height:auto;">
+            <div id="content-bio-content">
+                <textarea id="matrix-input" style="width:50%;height:100%;float:left"></textarea>
+                <h3 id="X-min-max">X-axis range of data:</h3>
+                <h3 id="Y-min-max">Y-axis range of data:</h3>
+                <h3 id="X-slice">X-axis slice:</h3>
+                From <input id="X-from"> To <input id="X-to"> Slice into <input id="X-parts"> parts
+                <h3 id="Y-slice">Y-axis slice:</h3>
+                From <input id="Y-from"> To <input id="Y-to"> Slice into <input id="Y-parts"> parts
+                <br>
+                <button type="button" id="load" style="font-size: 18px;">
+                    读取数据
+                </button>
+                <button type="button" id="start" style="font-size: 18px;">
+                    开始计算
+                </button>
+                
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        
+        
+        <div id="research" class="content-entry">
+            <h1>读取数据</h1>
+            <table id="table1" class="display" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>X</th>
+                        <th>Y</th>
+                        <th>Temperature</th>
+                    </tr>
+                </thead>
+                <tbody id="input-table">
+                    
+                </tbody>
+            </table>
+            <h1>计算结果</h1>
+            <table id="table2" class="display" cellspacing="0" width="100%">
+                <tbody id="result-table">
+                    
+                </tbody>
+            </table>
+            <table id="table3" class="display" cellspacing="0" width="100%">
+                <tbody id="statistic-table">
+                    
+                </tbody>
+            </table>
+        </div>
+       
+        <div id="copyleft">
+            copyleft <img src="home/static/image/copyleft.png" style="height:15px;width:15px;"> the source code of this website is free to use and modify
+        </div>
+    </div>
+    
+</div>
+    
+
+</body>
+    
+<script>
+    class Point {
+        constructor(x, y, heat){
+            this.x = x;
+            this.y = y;
+            this.heat = heat;
+        }
+    }
+    var points = null;
+    
+    $(document).ready(function(){
+        $("#table1").DataTable();
+    });
+
+    $("#load").click(function(){
+        // initialization
+        var raw_data = $("#matrix-input").val().split(/[\s\xA0\u1680\u180E\u2000-\u200A\u2028\u2029\u202F\u205F\u3000]/);
+        
+        points = [];
+        var points_num = Math.floor(raw_data.length / 3);
+        for(var i = 0; i < points_num * 3; i = i + 3){
+            points.push(new Point(parseFloat(raw_data[i]),
+                                  parseFloat(raw_data[i + 1]), 
+                                  parseFloat(raw_data[i + 2])
+                                 )
+                       );
+        }
+        if (points.length != points_num){
+            alert("format error!");
+            return;
+        }
+        alert("Read " + points_num + " lines of data");
+        
+        // computation
+        var inf = 10000000.0;
+        var Xmin = inf, Xmax = -inf, Ymin = inf, Ymax = -inf;
+        for(var i = 0; i < points_num; i++){
+            if (Xmin > points[i].x) Xmin = points[i].x;
+            if (Xmax < points[i].x) Xmax = points[i].x;
+            if (Ymin > points[i].y) Ymin = points[i].y;
+            if (Ymax < points[i].y) Ymax = points[i].y;
+        }
+        $("#X-min-max").text("X-axis range of data:  [" + Xmin + ", " + Xmax + "]");
+        $("#Y-min-max").text("Y-axis range of data:  [" + Ymin + ", " + Ymax + "]");
+        
+        $("#input-table").empty();
+        var show_num = Math.min(3, Math.floor(points_num / 2));
+        for(var i = 0; i < show_num; i++){
+            var line1 = "<tr><td>" + points[i].x + "</td><td>" + points[i].y + "</td><td>" + points[i].heat + "</td></tr>";
+            $("#input-table").append(line1);
+        }
+        
+        var line1 = "<tr><td> ... </td><td> ... </td><td> ... </td></tr>";
+        $("#input-table").append(line1);
+        
+        for(var i = points_num - show_num; i < points_num; i++){
+            var line1 = "<tr><td>" + points[i].x + "</td><td>" + points[i].y + "</td><td>" + points[i].heat + "</td></tr>";
+            $("#input-table").append(line1);
+        }
+        //alert(Xmin); alert(Xmax);
+        //alert(Ymin); alert(Ymax);
+    });
+    
+    
+    $("#start").click(function(){
+        if (points == null){
+            alert("Please load data first!");
+            return;
+        }
+        
+        var Xfrom = parseFloat($("#X-from").val());
+        var Xto = parseFloat($("#X-to").val());
+        var Xparts = parseFloat($("#X-parts").val());
+        var Xstep = (Xto - Xfrom) / Xparts;
+        
+        var Yfrom = parseFloat($("#Y-from").val());
+        var Yto = parseFloat($("#Y-to").val());
+        var Yparts = parseFloat($("#Y-parts").val());
+        var Ystep = (Yto - Yfrom) / Yparts;
+        
+        if (Xfrom == NaN || Xto == NaN || Xparts == NaN ||
+            Yfrom == NaN || Yto == NaN || Yparts == NaN){
+            alert("Please enter slice info for X-axis and Y-axis");
+        }
+       
+        
+        var result = [];
+        for(var i = 0; i < Xparts; i++){
+            var tmp1 = [];
+            for(var j = 0; j < Yparts; j++){
+                var tmp2 = [];
+                tmp1.push(tmp2);
+            }
+            result.push(tmp1);
+        }
+        
+        var points_num = points.length;
+        for(var i = 0; i < points_num; i++){
+            var Xidx = parseInt((points[i].x - Xfrom) / Xstep);
+            var Yidx = parseInt((points[i].y - Yfrom) / Ystep);
+            if (Xidx == Xparts) Xidx = Xparts - 1;
+            if (Yidx == Yparts) Yidx = Yparts - 1;
+            if (Xidx < 0 || Xidx >= Xparts || Yidx < 0 || Yidx >= Yparts){
+                alert("Interneal Error");
+            }
+            result[Xidx][Yidx].push(points[i]);
+        }
+        
+        // Show Result
+        $("#result-table").empty();
+        $("#statistic-table").empty();
+        var line1 = "<tr><td>Average</td>";
+        var line2 = "<tr><td>Sample Set Size</td>";
+        for(var j = 0; j < Yparts; j++){
+            line1 += "<td>Y:[" + (j * Ystep + Yfrom) + ", " + ((j + 1) * Ystep + Yfrom) + ")</td>";
+            line2 += "<td>Y:[" + (j * Ystep + Yfrom) + ", " + ((j + 1) * Ystep + Yfrom) + ")</td>";
+        }
+        $("#result-table").append(line1);
+        $("#statistic-table").append(line2);
+        
+        for(var i = 0; i < Xparts; i++){
+            //var line1 = "<tr><td>" + points[i].x + "</td><td>" + points[i].y + "</td><td>" + points[i].heat + "</td></tr>";
+            var line1 = "<tr><td>X:[" + (i * Xstep + Xfrom) + ", " + ((i + 1) * Xstep + Xfrom) + ")</td>";
+            var line2 = line1;
+            for(var j = 0; j < Yparts; j++){
+                // average for one slot
+                var tmp = result[i][j].length;
+                line2 += "<td>" + tmp + "</td>";
+                if (tmp == 0){
+                    line1 += "<td> Empty </td>";
+                } else{
+                    var avg = 0;
+                    for(var k = 0; k < tmp; k++)
+                        avg += result[i][j][k].heat;
+                    avg /= tmp;
+                    line1 += "<td>" + avg + "</td>";
+                }
+                
+            }
+            line1 += "</tr>";
+            line2 += "</tr>";
+            $("#result-table").append(line1);
+            $("#statistic-table").append(line2);
+        }
+    });
+</script>
+</html>

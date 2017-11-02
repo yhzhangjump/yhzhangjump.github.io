@@ -72,6 +72,8 @@
 .content-entry{
     padding-top: 100px;
     padding-bottom: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
     
     overflow:hidden;
     text-align: center;    /* Button的居中 */

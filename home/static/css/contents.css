@@ -29,13 +29,23 @@
 }
 
 #content-updates{
-    height: 44px;           /* 黑框高度 */
+    height: 100px;           /* 黑框高度 */
     padding: 8px 3px;       /* 上下8px，左右3px */
     background-color: #333; /* 黑框背景 */
     text-align: center;
 }
 
 #content-updates h1, #content-updates h1 a{
+    /*width: 800px;*/          /* 固定文字高度 */
+    margin: auto;           /* H1居中 */
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    /*font-family: Microsoft YaHei;*/
+}
+
+#content-updates td, #content-updates td a{
     /*width: 800px;*/          /* 固定文字高度 */
     margin: auto;           /* H1居中 */
     color: #fff;
@@ -91,12 +101,13 @@
     line-height: 26px;
     font-weight: normal;
     font-family: Calibri;
+    text-align: left;
 }
 
 .project-entry{
     float:left;
     margin:auto;
-    width: 300px;
+    width: 280px;
     height: 400px;
     margin-left: 50px;
     margin-right: 50px;
@@ -133,6 +144,54 @@
 }
 
 .project-entry p{
+    color: black;
+    font-size: 18px;
+    /*font-family: Microsoft YaHei;*/
+    font-weight: normal;
+    height: 90px;
+    margin: 0px;
+}
+
+.hobby-entry{
+    float:left;
+    margin:auto;
+    width: 280px;
+    height: 320px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 2px; /* reserved for hover effect */
+}
+
+.hobby-entry:hover{
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 0px;
+}
+
+.hobby-entry img{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 210px;
+    width: auto;
+}
+
+.hobby-entry h2{
+    /*font-family: Microsoft YaHei;*/
+    font-weight: 700;
+    font-size: 22px;
+    color: #222;
+    letter-spacing: 0.05em;
+    text-align: center;
+    
+    height: 60px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.hobby-entry p{
     color: black;
     font-size: 18px;
     /*font-family: Microsoft YaHei;*/

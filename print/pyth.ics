@@ -1,0 +1,332 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:yunhao@pyth.network
+X-WR-TIMEZONE:America/New_York
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+X-LIC-LOCATION:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART:20220825T150000Z
+DTEND:20220825T153000Z
+DTSTAMP:20220831T170208Z
+ORGANIZER;CN=Ali Behjati:mailto:abehjati@jumptrading.com
+UID:040000008200E00074C5B7101A82E00800000000D79FE89561B8D801000000000000000
+ 0100000002EAB2E04078CED4285F17B1CC11C5FD6
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=yunhao
+ @pyth.network;X-NUM-GUESTS=0:mailto:yunhao@pyth.network
+CREATED:20220825T150238Z
+DESCRIPTION:\n\n\n\nAli Behjati is inviting you to a meeting.\nMeeting ID: 
+ 913 1704 7356\n\nJoin from PC\, Mac\, Linux\, iOS or Android: https://jumpt
+ rading.zoom.us/j/91317047356?pwd=djRqMlN0QTFISy9ldEk2Vmp4UFR2QT09&from=addo
+ n\nPassword: 831363\n\n\niPhone One Tap Mobile:\nUS: +13126266799\,\,913170
+ 47356# \,#\,\,\,831363#\nUnited Kingdom: +442034815237\,\,91317047356# \,#\
+ ,\,\,831363#\nSingapore: +6531587288\,\,91317047356# \,#\,\,\,831363#\nChin
+ a: +861053876330\,\,91317047356# \,#\,\,\,831363#\nNetherlands: +3120241028
+ 8\,\,91317047356# \,#\,\,\,831363#\nIndia: +912248798004\,\,91317047356# \,
+ #\,\,\,831363#\n\nOr Telephone:\nDial:\nUS: +1 312 626 6799\nUnited Kingdom
+ : +44 203 481 5237\nSingapore: +65 3158 7288\nChina: +86 10 5387 6330\nNeth
+ erlands: +31 20 241 0288\nIndia: +91 22 48 798 004\nMeeting ID: 913 1704 73
+ 56\nPassword: 831363\n\nInternational numbers available: https://jumptradin
+ g.zoom.us/u/aNnPeb0lD\n\n\n________________________________\n\nNote: This e
+ mail is for the confidential use of the named addressee(s) only and may con
+ tain proprietary\, confidential\, or privileged information and/or personal
+  data. If you are not the intended recipient\, you are hereby notified that
+  any review\, dissemination\, or copying of this email is strictly prohibit
+ ed\, and requested to notify the sender immediately and destroy this email 
+ and any attachments. Email transmission cannot be guaranteed to be secure o
+ r error-free. The Company\, therefore\, does not make any guarantees as to 
+ the completeness or accuracy of this email or any attachments. This email i
+ s for informational purposes only and does not constitute a recommendation\
+ , offer\, request\, or solicitation of any kind to buy\, sell\, subscribe\,
+  redeem\, or perform any type of transaction of a financial product. Person
+ al data\, as defined by applicable data protection and privacy laws\, conta
+ ined in this email may be processed by the Company\, and any of its affilia
+ ted or related companies\, for legal\, compliance\, and/or business-related
+  purposes. You may have rights regarding your personal data\; for informati
+ on on exercising these rights or the Company’s treatment of personal data\,
+  please email datarequests@jumptrading.com.\n
+LAST-MODIFIED:20220825T150327Z
+LOCATION:https://jumptrading.zoom.us/j/91317047356?pwd=djRqMlN0QTFISy9ldEk2
+ Vmp4UFR2QT09&from=addon
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Ali / Yunhao
+TRANSP:OPAQUE
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-OWNERAPPTID:2120797399
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-LOCATIONDISPLAYNAME:https://jumptrading.zoom.us/j/91317047356?p
+ wd=djRqMlN0QTFISy9ldEk2Vmp4UFR2QT09&from=addon
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"https://jumptrading.zoom.us/j/913170
+ 47356?pwd=djRqMlN0QTFISy9ldEk2Vmp4UFR2QT09&from=addon"\,"LocationAnnotation
+ ":""\,"LocationUri":""\,"LocationStreet":""\,"LocationCity":""\,"LocationSt
+ ate":""\,"LocationCountry":""\,"LocationPostalCode":""\,"LocationFullAddres
+ s":""}]
+X-MICROSOFT-LOCATIONSOURCE:None
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20220831T103000
+DTEND;TZID=America/New_York:20220831T110000
+RRULE:FREQ=WEEKLY;BYDAY=WE
+DTSTAMP:20220831T170208Z
+ORGANIZER;CN=yunhao@pyth.network:mailto:yunhao@pyth.network
+UID:5un91nsprih51t963brq6j7tl9@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=al
+ i@pyth.network;X-NUM-GUESTS=0:mailto:ali@pyth.network
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=yunhao
+ @pyth.network;X-NUM-GUESTS=0:mailto:yunhao@pyth.network
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=abehja
+ ti@jumptrading.com;X-NUM-GUESTS=0:mailto:abehjati@jumptrading.com
+CREATED:20220829T000455Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin Zoom Meeting\nhttps://pythdataassociation.zo
+ om.us/j/86262705107?pwd=bFJ3elJtRUZjeFlMK0VtZ2RIQ2pidz09 (ID: 86262705107\,
+  passcode: 967992)\n\nJoin by phone\n(US) +1 301-715-8592 (passcode: 967992
+ )\n\nJoining instructions: https://www.google.com/url?q=https://application
+ s.zoom.us/addon/invitation/detail?meetingUuid%3DO5vHCMJwTc2sd%252FVt8URkzg%
+ 253D%253D%26signature%3Dd69203a8e83869f61cd5559375c35d919f21b3f10636e99e6e2
+ 623198798fef6%26v%3D1&sa=D&source=calendar&usg=AOvVaw3klQkVgC0gmG5rTRDUQ7t4
+ \n\nMeeting host: yunhao@pyth.network<br /><br />Join Zoom Meeting: <br /><
+ a href="https://www.google.com/url?q=https://pythdataassociation.zoom.us/j/
+ 86262705107?pwd%3DbFJ3elJtRUZjeFlMK0VtZ2RIQ2pidz09&amp\;sa=D&amp\;source=ca
+ lendar&amp\;usg=AOvVaw04YulzJhywD-gjz_5E6MEW" target="_blank">https://pythd
+ ataassociation.zoom.us/j/86262705107?pwd=bFJ3elJtRUZjeFlMK0VtZ2RIQ2pidz09</
+ a>\n\nDo not edit this section of the description.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20220829T075950Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Ali/Yunhao Sync
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20220831T103000
+DTEND;TZID=America/New_York:20220831T110000
+DTSTAMP:20220831T170208Z
+ORGANIZER;CN=yunhao@pyth.network:mailto:yunhao@pyth.network
+UID:5un91nsprih51t963brq6j7tl9@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=al
+ i@pyth.network;X-NUM-GUESTS=0:mailto:ali@pyth.network
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=yunhao
+ @pyth.network;X-NUM-GUESTS=0:mailto:yunhao@pyth.network
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=abehja
+ ti@jumptrading.com;X-NUM-GUESTS=0:mailto:abehjati@jumptrading.com
+RECURRENCE-ID;TZID=America/New_York:20220831T103000
+CREATED:20220829T000455Z
+DESCRIPTION:-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~::~:~::-\nJoin Zoom Meeting\nhttps://pythdataassociation.zo
+ om.us/j/86262705107?pwd=bFJ3elJtRUZjeFlMK0VtZ2RIQ2pidz09 (ID: 86262705107\,
+  passcode: 967992)\n\nJoin by phone\n(US) +1 301-715-8592 (passcode: 967992
+ )\n\nJoining instructions: https://www.google.com/url?q=https://application
+ s.zoom.us/addon/invitation/detail?meetingUuid%3DO5vHCMJwTc2sd%252FVt8URkzg%
+ 253D%253D%26signature%3Dd69203a8e83869f61cd5559375c35d919f21b3f10636e99e6e2
+ 623198798fef6%26v%3D1&sa=D&source=calendar&usg=AOvVaw3klQkVgC0gmG5rTRDUQ7t4
+ \n\nMeeting host: yunhao@pyth.network<br /><br />Join Zoom Meeting: <br /><
+ a href="https://www.google.com/url?q=https://pythdataassociation.zoom.us/j/
+ 86262705107?pwd%3DbFJ3elJtRUZjeFlMK0VtZ2RIQ2pidz09&amp\;sa=D&amp\;source=ca
+ lendar&amp\;usg=AOvVaw04YulzJhywD-gjz_5E6MEW" target="_blank">https://pythd
+ ataassociation.zoom.us/j/86262705107?pwd=bFJ3elJtRUZjeFlMK0VtZ2RIQ2pidz09</
+ a>\n\nDo not edit this section of the description.\n-::~:~::~:~:~:~:~:~:~:~
+ :~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20220829T075950Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Ali/Yunhao Sync
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20220223T080000
+DTEND;TZID=America/Los_Angeles:20220223T081500
+EXDATE;TZID=America/Los_Angeles:20220330T080000
+EXDATE;TZID=America/Los_Angeles:20220525T080000
+EXDATE;TZID=America/Los_Angeles:20220727T080000
+RRULE:FREQ=WEEKLY;WKST=SU;INTERVAL=1;BYDAY=WE
+DTSTAMP:20220831T170208Z
+ORGANIZER;CN=Jayant Krishnamurthy:mailto:jayant@jumpcrypto.com
+UID:040000008200E00074C5B7101A82E008000000009084B871B824D801000000000000000
+ 0100000007C99AAD7884DB74DB3E73AA1DEED4498
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Al
+ i Behjati;X-NUM-GUESTS=0:mailto:abehjati@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=da
+ niel@pyth.network;X-NUM-GUESTS=0:mailto:daniel@pyth.network
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Da
+ vid Paryente;X-NUM-GUESTS=0:mailto:dparyente@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Er
+ an Davidovich;X-NUM-GUESTS=0:mailto:edavidovich@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Gu
+ illermo Bescos Alapont;X-NUM-GUESTS=0:mailto:gbescos@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Ha
+ rnaik Kalirai;X-NUM-GUESTS=0:mailto:hkalirai@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=St
+ anislaw Drozd;X-NUM-GUESTS=0:mailto:sdrozd@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Sa
+ mir Islam;X-NUM-GUESTS=0:mailto:sislam@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Th
+ omaz Leite;X-NUM-GUESTS=0:mailto:thomaz@pyth.network
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=To
+ m Pointon;X-NUM-GUESTS=0:mailto:tpointon@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=ACCEPTED;CN=yunhao
+ @pyth.network;X-NUM-GUESTS=0:mailto:yunhao@pyth.network
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Ph
+ ilip Taffet;X-NUM-GUESTS=0:mailto:phtaffet@jumptrading.com
+CREATED:20220831T152412Z
+DESCRIPTION:Remaking this event so it starts syncing with google calendar\n
+ \n________________________________\n\nNote: This email is for the confident
+ ial use of the named addressee(s) only and may contain proprietary\, confid
+ ential\, or privileged information and/or personal data. If you are not the
+  intended recipient\, you are hereby notified that any review\, disseminati
+ on\, or copying of this email is strictly prohibited\, and requested to not
+ ify the sender immediately and destroy this email and any attachments. Emai
+ l transmission cannot be guaranteed to be secure or error-free. The Company
+ \, therefore\, does not make any guarantees as to the completeness or accur
+ acy of this email or any attachments. This email is for informational purpo
+ ses only and does not constitute a recommendation\, offer\, request\, or so
+ licitation of any kind to buy\, sell\, subscribe\, redeem\, or perform any 
+ type of transaction of a financial product. Personal data\, as defined by a
+ pplicable data protection and privacy laws\, contained in this email may be
+  processed by the Company\, and any of its affiliated or related companies\
+ , for legal\, compliance\, and/or business-related purposes. You may have r
+ ights regarding your personal data\; for information on exercising these ri
+ ghts or the Company’s treatment of personal data\, please email datarequest
+ s@jumptrading.com.\n
+LAST-MODIFIED:20220831T163108Z
+LOCATION:https://jumptrading.zoom.us/j/94893613290?pwd=dFdOOVIrTmdHd1FiRFRX
+ Rm1JT1NUQT09
+SEQUENCE:9
+STATUS:CONFIRMED
+SUMMARY:Pyth Engineering Sync
+TRANSP:OPAQUE
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-APPT-SEQUENCE:9
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:1
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-OWNERAPPTID:-2146293786
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-LOCATIONS:[ { "DisplayName" : "https://jumptrading.zoom.us/j/94
+ 893613290?pwd=dFdOOVIrTmdHd1FiRFRXRm1JT1NUQT09"\, "LocationAnnotation" : ""
+ \, "LocationSource" : 0\, "Unresolved" : true\, "LocationUri" : "" } ]
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/Los_Angeles:20220228T070000
+DTEND;TZID=America/Los_Angeles:20220228T073000
+EXDATE;TZID=America/Los_Angeles:20220328T070000
+EXDATE;TZID=America/Los_Angeles:20220725T070000
+EXDATE;TZID=America/Los_Angeles:20220815T070000
+RRULE:FREQ=WEEKLY;WKST=SU;INTERVAL=1;BYDAY=MO
+DTSTAMP:20220831T170208Z
+ORGANIZER;CN=Jayant Krishnamurthy:mailto:jayant@jumpcrypto.com
+UID:040000008200E00074C5B7101A82E00800000000004EAEDDB824D801000000000000000
+ 0100000008FC30EC8C9AFAB458DB79141A9E0A93E
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Al
+ i Behjati;X-NUM-GUESTS=0:mailto:abehjati@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=da
+ niel@pyth.network;X-NUM-GUESTS=0:mailto:daniel@pyth.network
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Da
+ vid Paryente;X-NUM-GUESTS=0:mailto:dparyente@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Er
+ an Davidovich;X-NUM-GUESTS=0:mailto:edavidovich@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Gu
+ illermo Bescos Alapont;X-NUM-GUESTS=0:mailto:gbescos@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Ha
+ rnaik Kalirai;X-NUM-GUESTS=0:mailto:hkalirai@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Ra
+ hul Maganti;X-NUM-GUESTS=0:mailto:rmaganti@jumpcrypto.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=St
+ anislaw Drozd;X-NUM-GUESTS=0:mailto:sdrozd@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Sa
+ mir Islam;X-NUM-GUESTS=0:mailto:sislam@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Th
+ omaz Leite;X-NUM-GUESTS=0:mailto:thomaz@pyth.network
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=To
+ m Pointon;X-NUM-GUESTS=0:mailto:tpointon@jumptrading.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=ACCEPTED;CN=yunhao
+ @pyth.network;X-NUM-GUESTS=0:mailto:yunhao@pyth.network
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Ph
+ ilip Taffet;X-NUM-GUESTS=0:mailto:phtaffet@jumptrading.com
+CREATED:20220831T152445Z
+DESCRIPTION:\n\n________________________________\n\nNote: This email is for
+  the confidential use of the named addressee(s) only and may contain propri
+ etary\, confidential\, or privileged information and/or personal data. If y
+ ou are not the intended recipient\, you are hereby notified that any review
+ \, dissemination\, or copying of this email is strictly prohibited\, and re
+ quested to notify the sender immediately and destroy this email and any att
+ achments. Email transmission cannot be guaranteed to be secure or error-fre
+ e. The Company\, therefore\, does not make any guarantees as to the complet
+ eness or accuracy of this email or any attachments. This email is for infor
+ mational purposes only and does not constitute a recommendation\, offer\, r
+ equest\, or solicitation of any kind to buy\, sell\, subscribe\, redeem\, o
+ r perform any type of transaction of a financial product. Personal data\, a
+ s defined by applicable data protection and privacy laws\, contained in thi
+ s email may be processed by the Company\, and any of its affiliated or rela
+ ted companies\, for legal\, compliance\, and/or business-related purposes. 
+ You may have rights regarding your personal data\; for information on exerc
+ ising these rights or the Company’s treatment of personal data\, please ema
+ il datarequests@jumptrading.com.\n
+LAST-MODIFIED:20220831T163116Z
+LOCATION:https://jumptrading.zoom.us/j/94893613290?pwd=dFdOOVIrTmdHd1FiRFRX
+ Rm1JT1NUQT09
+SEQUENCE:8
+STATUS:CONFIRMED
+SUMMARY:Pyth Engineering Weekly
+TRANSP:OPAQUE
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-APPT-SEQUENCE:8
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:1
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-OWNERAPPTID:-2140002330
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-LOCATIONS:[ { "DisplayName" : "https://jumptrading.zoom.us/j/94
+ 893613290?pwd=dFdOOVIrTmdHd1FiRFRXRm1JT1NUQT09"\, "LocationAnnotation" : ""
+ \, "LocationSource" : 0\, "Unresolved" : true\, "LocationUri" : "" } ]
+END:VEVENT
+END:VCALENDAR

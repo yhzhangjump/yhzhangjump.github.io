@@ -51,15 +51,19 @@
             
             // Bio
             if (right_width < 1050){
-                $("#content-bio-content").css("width", "300px");
-                $("#content-bio-title p").css("display", "none");
+                //$("#content-bio-content").css("width", "300px");
+                $("#content-bio-content").css("margin", "0");
+                //$("#content-bio-title p").css("display", "none");
+                $("#content-bio-avatar").css("display", "none");
                 $("#content-bio-title").css("margin-left", "10px");
                 
                 $("#content-updates").html(alert_info);
             } else{
                 // re-display text content
-                $("#content-bio-content").css("width", "1050px");
-                $("#content-bio-title p").css("display", "inherit");
+                //$("#content-bio-content").css("width", "1050px");
+                $("#content-bio-content").css("margin", "auto");
+                //$("#content-bio-title p").css("display", "inherit");
+                $("#content-bio-avatar").css("display", "inherit");
                 $("#content-bio-title").css("margin-left", "70px");
                 
                 $("#content-updates").html(news_update);

@@ -57,7 +57,7 @@
                 $("#content-bio-avatar").css("display", "none");
                 $("#content-bio-title").css("margin-left", "10px");
                 
-                $("#content-updates").html(alert_info);
+                $("#content-updates").css("display", "none");
             } else{
                 // re-display text content
                 //$("#content-bio-content").css("width", "1050px");
@@ -66,6 +66,7 @@
                 $("#content-bio-avatar").css("display", "inherit");
                 $("#content-bio-title").css("margin-left", "70px");
                 
+                $("#content-updates").css("display", "inherit");
                 $("#content-updates").html(news_update);
             }
         }

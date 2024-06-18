@@ -29,7 +29,7 @@
 }
 
 #content-updates{
-    height: 125px;           /* 黑框高度 */
+    height: 105px;           /* 黑框高度 */
     padding: 8px 3px;       /* 上下8px，左右3px */
     background-color: #333; /* 黑框背景 */
 }
